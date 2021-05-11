@@ -1,0 +1,102 @@
+@media (min-width: 900px) {
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        width: 800px;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .header__img {
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+        background-image: url(../images/drawers.jpg);
+        background-size: cover;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .main {
+        width: 60%;
+        font-size: 14px;
+        border-radius: 0 15px 15px 0;
+
+        &__title {
+            line-height: 1.5;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        &__text {
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        &__social {
+
+            &__img {
+                height: 45px;
+                width: 45px;
+            }
+
+            &__info {
+                margin-left: 1.2rem;
+                margin-right: auto;
+
+                &__name {
+                    font-size: 14px;
+                }
+            }
+
+            &__cta {
+                height: 35px;
+                width: 35px;
+                background-color: $DesaturatedDarkBlue;
+
+                &__img {
+                    display: none;
+
+                    &__desktop {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal {
+        width: auto;
+        height: auto;
+        bottom: 110px;
+        right: -90px;
+        border-radius: 15px;
+        padding: 1.25rem 2.75rem;
+        
+        &__title {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        &__social {
+            margin-left: 1.2rem;
+        }
+
+        &__share {
+            display: none;
+        }
+        &::after {
+            content: "";
+            background-color: $VeryDarkGrayishBlue;
+            height: 24px;
+            width: 24px;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 130px;
+            top: 51px;
+
+        }
+    }
+}
+

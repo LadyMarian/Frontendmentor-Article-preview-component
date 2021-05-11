@@ -1,0 +1,60 @@
+.modal__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    display: none;
+    z-index: 5;
+}
+
+.modal {
+    width: 100%;
+    background-color: $VeryDarkGrayishBlue;
+    height: 76px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2.25rem;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+
+    &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $GrayishBlue;
+        letter-spacing: 4px;
+    }
+
+    &__social {
+        margin-left: 1rem;
+    }
+
+    &__share {
+        background-color: $DesaturatedDarkBlue;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 0;
+        margin-left: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__point {
+        display: none;
+    }
+}
+
+.show {
+    display: flex;
+}
+

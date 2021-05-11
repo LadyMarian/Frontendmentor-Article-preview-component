@@ -1,0 +1,41 @@
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $GrayishBlue;
+    position: relative;
+}
+
+.container {
+    width: 325px;
+    margin: 5rem auto;
+    background-color: $LightGrayishBlue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+// attribution
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 13px;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
